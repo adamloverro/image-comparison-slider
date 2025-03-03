@@ -16,19 +16,30 @@
 	<header>
 		<h1>Image Comparison Slider</h1>
 	</header>
-	<figure class="cd-image-container">
-		<img src="img/img-original.jpg" alt="Original Image">
-		<span class="cd-image-label" data-type="original">Original</span>
+	<div class="upload-container">
+		<div class="upload-box" id="left-upload-box">
+			<p>Drag and drop an image here for the Left side</p>
+		</div>
+		<div class="upload-box" id="right-upload-box">
+			<p>Drag and drop an image here for the Right side</p>
+		</div>
+	</div>
+	<div class="image-comparison-wrapper">
+		<figure class="cd-image-container">
+			<img id="right-image" src="img/img-original.jpg" alt="Right Image">
+		<span class="cd-image-label" data-type="right">Right</span>
 
 		<div class="cd-resize-img"> <!-- the resizable image on top -->
-			<img src="img/img-modified.jpg" alt="Modified Image">
-			<span class="cd-image-label" data-type="modified">Modified</span>
-		</div>
+			<img id="left-image" src="img/img-modified.jpg" alt="Left Image">
+			<span class="cd-image-label" data-type="left">Left</span>
+			</div>
 
-		<span class="cd-handle"></span>
-	</figure> <!-- cd-image-container -->
+			<span class="cd-handle"></span>
+		</figure> <!-- cd-image-container -->
+	</div>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/upload.js"></script> <!-- Drag and Drop functionality -->
 </body>
 </html>

@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
     //make the .cd-handle element draggable and modify .cd-resize-img width according to its position
     imageComparisonContainers.each(function(){
         var actual = $(this);
-        drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-image-label[data-type="modified"]'));
+        drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="right"]'), actual.find('.cd-image-label[data-type="left"]'));
     });
 
     //upadate images label visibility
@@ -46,8 +46,8 @@ jQuery(document).ready(function($){
     function checkLabel(container) {
         container.each(function(){
             var actual = $(this);
-            updateLabel(actual.find('.cd-image-label[data-type="modified"]'), actual.find('.cd-resize-img'), 'left');
-            updateLabel(actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-resize-img'), 'right');
+            updateLabel(actual.find('.cd-image-label[data-type="left"]'), actual.find('.cd-resize-img'), 'left');
+            updateLabel(actual.find('.cd-image-label[data-type="right"]'), actual.find('.cd-resize-img'), 'right');
         });
 
         resizing = false;

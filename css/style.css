@@ -57,8 +57,8 @@ header h1 {
 
 .cd-image-container {
   position: relative;
-  width: 90%;
-  max-width: 768px;
+  width: auto;
+  height: auto;
   margin: 0em auto;
 }
 .cd-image-container img {
@@ -199,4 +199,31 @@ header h1 {
   -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  width: 45%;
+  height: 100px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ccc;
+}
+
+.upload-box p {
+  margin: 0;
+}
+
+.image-comparison-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
